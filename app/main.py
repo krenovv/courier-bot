@@ -1,9 +1,28 @@
-from app.services.trip_service import TripService
-from app.repositories.trip_repository import TripRepository
-from app.repositories.car_settings_repository import CarSettingsRepository
+import os
+import asyncio
+
+from dotenv import load_dotenv
+
+from app.container import build_container
+from app.bot.bot import run_bot
+from app.db.database import init_db
 
 
-trip_repo = TripRepository()
-settings_repo = CarSettingsRepository()
+async def main():
+    load_dotenv()
 
-trip_service = TripService(trip_repo, settings_repo)
+    token = os.getenv("BOT_TOKEN")
+    if not token:
+        raise RuntimeError("BOT_TOKEN not found")
+
+    proxy = os.getenv("PROXY_URL")
+
+    container = build_container()
+
+    init_db("db.sqlite3")
+
+    await run_bot(token, container, proxy)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

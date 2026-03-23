@@ -4,7 +4,7 @@ import asyncio
 from dotenv import load_dotenv
 
 from app.container import build_container
-from app.bot.bot import run_bot
+from app.bot.main import run_bot
 from app.db.database import init_db
 
 

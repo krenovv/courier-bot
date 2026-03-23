@@ -1,4 +1,4 @@
-from models.trip import Trip
+from app.models.trip import Trip
 
 
 class MemoryTripRepository:

@@ -61,7 +61,7 @@ git clone https://github.com/krenovv/triptrack-bot
 cd triptrack-bot
 pip install -r requirements.txt
 
-# создать .env файл
+# create .env файл
 BOT_TOKEN=your_token
 
 python main.py

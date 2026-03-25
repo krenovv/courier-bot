@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="369ceafb-92b9-4a45-bc2d-3d8864345d71" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/bot/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +134,8 @@
       <workItem from="1774273252838" duration="26000" />
       <workItem from="1774273366461" duration="1543000" />
       <workItem from="1774283975300" duration="385000" />
-      <workItem from="1774351067563" duration="5691000" />
+      <workItem from="1774351067563" duration="6463000" />
+      <workItem from="1774430161633" duration="65000" />
     </task>
     <servers />
   </component>
@@ -160,10 +159,6 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/bot/handlers/debug.py</url>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app/bot/main.py</url>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/models/trip.py</url>

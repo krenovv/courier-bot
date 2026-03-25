@@ -1,7 +1,7 @@
 from aiogram import Bot, Dispatcher
 from aiogram.client.session.aiohttp import AiohttpSession
 
-from app.bot.handlers import start, trip, car_settings, common, debug
+from app.bot.handlers import start, common, trip, car_settings, debug
 
 async def run_bot(token, container, proxy):
     session = AiohttpSession(proxy=proxy) if proxy else AiohttpSession()

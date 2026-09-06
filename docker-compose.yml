@@ -14,3 +14,9 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+    networks:
+      - triptrack-net
+
+networks:
+  triptrack-net:
+    name: triptrack-net

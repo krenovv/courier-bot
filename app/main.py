@@ -4,7 +4,7 @@ import asyncio
 from dotenv import load_dotenv
 
 from app.container import build_container
-from app.bot.main import run_bot
+from app.bot.main import run_bot, start_health_server
 from app.db.database import init_db
 
 
@@ -25,7 +25,10 @@ async def main():
 
     init_db(db_path)
 
-    await run_bot(token, container, proxy)
+    await asyncio.gather(
+        run_bot(token, container, proxy),
+        start_health_server()
+    )
 
 
 if __name__ == "__main__":

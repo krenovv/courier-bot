@@ -16,7 +16,10 @@ services:
         max-file: "3"
     networks:
       - triptrack-net
+      - proxy-net
 
 networks:
   triptrack-net:
     name: triptrack-net
+  proxy-net:
+    external: true

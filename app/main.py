@@ -1,11 +1,18 @@
 import os
 import asyncio
+import logging
 
 from dotenv import load_dotenv
 
 from app.container import build_container
 from app.bot.main import run_bot, start_health_server
 from app.db.database import init_db
+
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+)
 
 
 async def main():
@@ -27,7 +34,7 @@ async def main():
 
     await asyncio.gather(
         run_bot(token, container, proxy),
-        start_health_server()
+        start_health_server(),
     )
 
 

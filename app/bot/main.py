@@ -21,6 +21,9 @@ async def run_bot(token, container, proxy):
     dp.include_router(car_settings.router)
     dp.include_router(debug.router)
 
+    print("Bot started.")
+    print("Start polling...")
+
     await dp.start_polling(bot)
 
 
